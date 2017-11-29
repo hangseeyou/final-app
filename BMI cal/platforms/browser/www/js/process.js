@@ -1,25 +1,29 @@
 
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+
 function calculation(){ 
-	var result= "";
+	var result="";
 	var div1 = document.getElementById('w').value*1; 
-	var div2 = document.getElementById('h').value*1;
-	//var div3 = document.getElementById('calc').value*1.11; 
-	var rr= div1/(div2/100*div2/100);
+	var div2 = document.getElementById('h').value*1; 
+	var rr= parseFloat(Math.round(div1/(div2/100*div2/100))).toFixed(2);
 
 		 if ((div1 <= 0) && (div2 <= 0)){ 
 		 	result = "Please Fill in everything correctly";
 		 }
-    else if (result < 18.5) {
+    else if (rr < 18.5) {
 
        result  = "Underweight" ;
      }
-    else if (result > 18.5 && result < 25) {
+    else if (rr > 18.5 && rr < 25) {
        result = "Normal";
      }
-    else if (result > 25 && result < 29) {
+    else if (rr > 25 && rr < 29) {
        result = "overweight";
     }
-    else if (result > 30) {
+    else if (rr > 30) {
        result = "Obese";
     }
 let r = `${rr}     ${result}`;
@@ -34,22 +38,22 @@ let dom =   <div>
 
 <br/>
 				<center><div id='a'></div> Age:
-					<input type='number' placeholder="|" align="center"/>
+					<input type='number' placeholder="     |" align="center"/>
 <br/><br/>
 				<div>
 
 					
-					<input type="radio" value="option1" if checked={true}/>Male
-					<input type="radio" value="option2" checked={false}/>Famale
+					<input type="radio"selected/>Male
+					<input type="radio"/>Female
 
 
 						</div>
 <br/><br/>
 				<div></div> height:
-					<input type='number' id='h' align="center" placeholder="|" /> cm
+					<input type='number' id='h' align="center" placeholder="     |" /> cm
 <br/><br/>
 				<div></div> weight: 
-					<input type='number' id='w' placeholder="|" /> kg
+					<input type='number' id='w' placeholder="     |" /> kg
 				
 <br/>
 <br/>
@@ -61,7 +65,7 @@ let dom =   <div>
 
 				<div>
 				<a href="tips.html"> 
-				<button type='tip' onClick={calculation} >Tips</button></a></div>
+				<button type='tip' onClick >Tips</button></a></div>
 
 				</center>
 			</div>;

@@ -11,7 +11,7 @@ button{
 	border: 1px #245ec6 solid;
 	box-shadow: 0 9px #A5A5A8;
 }
-.button:hover { background-color: #A5A5A8 }
+.button:hover { background-color: black }
 
 .button:active {
 	background-color: black:
@@ -35,11 +35,10 @@ input{
 .text{
 	font-size: 50px;
 	font-family: 'arial';
+	color:red;
 
 }
-.body{
-	background-color:#87cefa;
-}
+
 
 .topnav {
 	background-color: #00B7f6;
@@ -47,19 +46,83 @@ input{
 }
 .topnav a {
 	float: left;
-	color: green;
+	color: none;
 	text-align: center;
-	padding:14px 16px;
+	padding:20px 16px;
 	text-decoration: none;
 	font-size: 100px;
 
 }
 .topnav a:hover {
-	background-color: pink;
-	color: #00B7f6;
+	background-color: #00B7f6;
+	color: none;
 }
 .topnav a.active {
 	background-color: #00B7f6;
 	color: white;
 }
 
+
+
+.sidenav {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0AF6E3;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 40px;
+}
+
+
+.sidenav a:hover {
+    color: black;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 70px;
+    font-size: 70px;
+    margin-left: 70px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}f
+}
+
+
+.icon-bar {
+  float: left;
+    width: 100%;
+    height: 150px;
+    background-color:#00B7f6;
+    overflow: none;
+}
+
+.icon-bar a {
+    float: right;
+    width: 20%;
+    height: 90px;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    font-style: bold;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: violet !important;
+    text-decoration-line: none;
+
+}
