@@ -1,13 +1,13 @@
 button{
 	color:white;
-	font-size: 50px;
+	font-size: 25px;
 	background-color:#00B7f6;
 	border:none;
 	border-radius: 10px;
 	moz-border-radius: 10px;
 	webkit-border-radius: 10px;
-	height: 80px;
-	width: 250px;
+	height: 50px;
+	width: 150px;
 	border: 1px #245ec6 solid;
 	box-shadow: 0 9px #A5A5A8;
 }
@@ -21,19 +21,19 @@ button{
 
 input{
 	color:black;
-	font-size: 50px;
+	font-size: 30px;
 	background-color: #00B7f6;
-	border-radius: 10px;
+	border-radius: 7px;
 	moz-border-radius: 20px;
 	webkit-border-radius: 20px;
-	height: 80px;
-	width: 180px;
-	border: 2px #245ec6 solid;
+	height: 35px;
+	width: 90px;
+	border: 1px #245ec6 solid;
 	resize: none;
 }
 
-.text{
-	font-size: 50px;
+text{
+	font-size: 5px;
 	font-family: 'arial';
 	color:red;
 
@@ -43,6 +43,7 @@ input{
 .topnav {
 	background-color: #00B7f6;
 	overflow: hidden;
+	width: 100%;
 }
 .topnav a {
 	float: left;
@@ -73,8 +74,8 @@ input{
     left: 0;
     background-color: #0AF6E3;
     overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 40px;
+    transition: 4s;
+    padding-top: 45px;
 }
 
 
@@ -99,7 +100,7 @@ input{
 .icon-bar {
   float: left;
     width: 100%;
-    height: 150px;
+    height: 70px;
     background-color:#00B7f6;
     overflow: none;
 }
@@ -107,7 +108,7 @@ input{
 .icon-bar a {
     float: right;
     width: 20%;
-    height: 90px;
+    height: 50px;
     text-align: center;
     padding: 12px 0;
     transition: all 0.3s ease;
@@ -125,4 +126,10 @@ input{
     background-color: violet !important;
     text-decoration-line: none;
 
+}
+.up {
+	font-family:times new roman;
+	font-size: 50px;
+	font-weight: bold;
+	font-size-adjust: 10px;
 }

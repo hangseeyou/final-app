@@ -34,12 +34,12 @@ let r = `${rr}     ${result}`;
 
 let _root = document.getElementById('root');
 let dom =   <div>
+					<div id="up"><center>BMI Calculator</center></div><br/><br/>
 
-
-<br/>
+				
 				<center><div id='a'></div> Age:
-					<input type='number' placeholder="     |" align="center"/>
-<br/><br/>
+					<input type='number' placeholder="enter" align="center"/>
+<br/>
 				<div>
 
 					
@@ -48,24 +48,23 @@ let dom =   <div>
 
 
 						</div>
-<br/><br/>
+<br/>
 				<div></div> height:
-					<input type='number' id='h' align="center" placeholder="     |" /> cm
+					<input type='number' id='h' align="center" placeholder="enter" /> cm
 <br/><br/>
 				<div></div> weight: 
-					<input type='number' id='w' placeholder="     |" /> kg
+					<input type='number' id='w' placeholder="enter" /> kg
 				
 <br/>
 <br/>
 				<div>
 			
 				<button type='sub' onClick={calculation} value='calc'>Calculate</button></div></center> 
+				<br/>
 				<center>BMI:<div id='calc'> </div>
 <br/>
 
-				<div>
-				<a href="tips.html"> 
-				<button type='tip' onClick >Tips</button></a></div>
+				
 
 				</center>
 			</div>;
