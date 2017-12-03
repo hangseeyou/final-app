@@ -92,7 +92,7 @@ You must eat all nutritious foods so that you can increase your weight.dont run 
 		let content = <div><center>
 				Tips:Normal<br/><br/>
 
-        You need to have a balance diet and exercise.walking is good for your health.Sometimes share your foods.
+Okey you are normal so stay on your balance diet and regular exercise.Always remember don't be abnormal.
         <br/>
         <br/>
         <br/>
@@ -138,8 +138,8 @@ You need an ultra diet and daily exercise.Release some foods in your fridge don'
             ReactDOM.render(content,document.getElementById('root'));
     },
 	loading:function(){
-		let content = <div class="blink"><center><img src="img/fat.jpg" class="img"/></center>
-				        
+		let content = <div class="blink"><img src="img/fat.jpg" class="img"/>
+				..wait...a..moment..        
 				</div>;
 		ReactDOM.render(content,document.getElementById('root'));
 	}
