@@ -72,9 +72,9 @@ text{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #0AF6E3;
+    background-color:#84F9F3;
     overflow-x: hidden;
-    transition: 4s;
+    transition: 1s;
     padding-top: 45px;
 }
 
@@ -132,4 +132,46 @@ text{
 	font-size: 50px;
 	font-weight: bold;
 	font-size-adjust: 10px;
+}
+
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+.blink {
+	background-color: none;
+	font-size:50px;
+	font-align-content: center;
+	font-color:red;
+	font-family: george;
+	animation:fade 3000ms infinite;
+    -webkit-animation:fade 300ms infinite;
+
+}
+
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+.front {
+	background-color: red;
+	font-color:red;
+	font-family: arial;
+	animation:fade 3000ms infinite;
+    -webkit-animation:fade 300ms infinite;
 }

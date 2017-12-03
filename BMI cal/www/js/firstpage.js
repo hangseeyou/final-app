@@ -1,4 +1,4 @@
-let _root = document.getElementById('root');
+et _root = document.getElementById('root');
 let dom =   <div>
 
 				<center><div>Welcome!</div>
