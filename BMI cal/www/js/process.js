@@ -21,7 +21,7 @@ let process = {
             <li><a href='#'><button><font face="times new roman" size="6" color="#984200" onClick={process.o}><i>Obese</i></font></button></a></li>
 			</div>
 
-                    <div id="up"><center></center></div><br/><br/>
+                    <div id="up"><center></center></div>
 
                 
                 <center><div id='a'></div> Age:
