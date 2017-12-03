@@ -31,7 +31,7 @@ let process = {
 
                     
                     <input type="radio"selected/>Male
-                    <input type="radio"/>Female
+                    <br/><input type="radio"/>Female
 
 
                         </div>
@@ -138,8 +138,8 @@ You need an ultra diet and daily exercise.Release some foods in your fridge don'
             ReactDOM.render(content,document.getElementById('root'));
     },
 	loading:function(){
-		let content = <div class="blink">
-					Loading...
+		let content = <div class="blink"><center><img src="img/fat.jpg" class="img"/></center>
+				        
 				</div>;
 		ReactDOM.render(content,document.getElementById('root'));
 	}
